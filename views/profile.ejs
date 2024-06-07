@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css"> 
+</head>
+<body> 
+
+    <div class="overlay hiddenOverlay">
+        <form class="form" data-method="PATCH" data-url="/user/me">
+            <label class="form__label" for="Name">Name</label>
+            <input type="text"  class="form__input" name="name" placeholder="Name">
+            <label class="form__label" for="email">Email</label>
+            <input type="text"  class="form__input" name="email" placeholder="Email">
+            <input type="submit" class="form__submit" value="Update me">
+        </form>
+    </div>
+
+    <main class="main">
+        <header class="header">
+            <a href="" class="header__logo">LOGO</a>
+            <div class="header__container">
+                <ul class="header__list">
+                    <li class="link1"><a href="/page/">HOME</a></li>
+                    <li class="link1 profile"><a href="/page/profile">PROFILE</a></li>
+                    <li class="link1 authEvent"><a href="/page/signin">LOGIN</a></li>
+                    <li class="link1 authEvent"><a href="/page/signup">REGISTRY</a></li>
+                </ul>
+                <button class="header__btn">Кнопка</button>
+            </div>
+        </header>
+
+        <!-- основной контейнер -->
+        <div class="wrapper">
+            <!-- flex контейнер  -->
+            <div class="d-flex justify-content-center align-items-center gap-5">
+                <!-- левый контейнер -->
+                <div class="p-5 border border-black rounded w-50 d-flex justify-content-center gap-5 flex-column align-items-center ">
+                    <!-- изображение -->
+                    <img src="../img/profile.webp" class="avatar w-25" alt="">
+                    <!-- контейнер с данныйми пользователя -->
+                    <div class="profile__container">
+                        <label>Name:</label>
+                        <h2 class="name"></h2>
+                        <label>Email:</label>
+                        <h2 class="email"></h2>
+                    </div>
+                    <div class="container__btn">
+                        <button class="btn__prodile edit">Edit</button>
+                        <button class="btn__prodile exit">Exit</button>
+                    </div>
+                    <button class="btn__prodile full delete">Delete</button>
+                </div>
+                <!-- правый контейнер  с данныйми пользователя -->
+                <div class="p-5 border border-black rounded d-flex justify-content-center gap-3 flex-column align-items-center w-50">
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer__container">
+                <a href="" class="footer__logo">LOGO</a>
+                <p class="footer__text">
+                    1213 Jerde WalkStreet North Avenue,
+                    California
+                    USA, 011234
+                </p>
+            </div>
+            <div class="footer__links">
+                <a href="" class="footer__link">Link</a>
+                <a href="" class="footer__link">Link</a>
+                <a href="" class="footer__link">Link</a>
+                <a href="" class="footer__link">Link</a>
+                <a href="" class="footer__link">Link</a>
+                <a href="" class="footer__link">Link</a>
+                <a href="" class="footer__link">Link</a>
+                <a href="" class="footer__link">Link</a>
+            </div>
+        </footer>
+    </main>
+
+    <script type="module" src="/js/profile.js"></script>
+</body>
+</html>
