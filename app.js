@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const router = require('./routes/routes');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
-const { PORT = 3000, DB_URL = 'mongodb+srv://Olga_Wu:MongoDB100!!@cluster0.zwvxuxe.mongodb.net/' } = process.env;
+const { PORT = 3000, DB_URL = 'mongodb+srv://Olga_Wu:MongoDB*******@cluster0.zwvxuxe.mongodb.net/' } = process.env;
 
 
 mongoose.connect(DB_URL)
